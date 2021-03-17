@@ -1,0 +1,173 @@
+body {
+  background: black;
+  background: hsl(210, 46%, 95%);
+font-family: 'Manrope', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+      min-height: 100vh;
+}
+h1{
+  color: gray;
+  color:hsl(217, 19%, 35%);
+  font-weight:700;
+  font-size: 1.5rem;
+}
+
+h4 {
+  color: gray;
+  color:hsl(217, 19%, 35%);
+    font-weight:700;
+  margin: 0;
+}
+p{
+    font-weight:500;
+  color: gray;
+  color:hsl(214, 17%, 51%);
+}
+.bottomRow {
+  display: flex;
+}
+.container{
+  padding: 20px;
+}
+.date {
+  margin: 10px 0 0;
+}
+.drawer-img{
+  margin:0
+}
+
+.michelleAndDate {
+  flex-grow: 3
+}
+
+.michelle-img {
+  max-width: 40px;
+  max-height: 42px;
+  border-radius: 50%;
+  flex-grow: 1;
+  margin: 0 10px 0 0;
+}
+.modal p{
+  margin:0;
+  font-size: .9rem;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: lightgray;
+  color: hsl(212, 23%, 69%);
+}
+.modal img{
+  width:20px;
+  height:20px;
+    cursor: pointer;
+}
+.modal{
+  background: #48556a;
+  border-radius: 0 0  10px 10px;
+  position: absolute;
+  padding: 25px 25px 25px 25px;
+  bottom:0;
+  right:0;
+  left:0;
+  display: flex;
+}
+
+.hideModal{
+  display: none;
+  visibility: hidden;
+}
+.icon-links{
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+.icon-links img:nth-of-type(3){
+  /* makes it take up less space and keeps the fb twt and p icons closer bc
+  they have less room to space around. */
+  margin-right: 100px;
+}
+
+.panel-img{
+  height: 240px;
+   background-image: url('images/drawers.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+}
+
+.shareBG {
+  margin: 20px 0 0;
+  background-color: #ecf2f8;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 6;
+}
+
+.turnDark{
+  background-color: 	#6d7f97;
+}
+
+ .turnLight{
+   /* Atom says it doesn't recognize the property but DO NOT DELETE! It works.
+    Fill only works though  if you select the <path> tag of the svg  and add
+   this class to that. Anything else I have tried hasn't worked. */
+   fill:white;
+}
+
+.whitePanel {
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow:0 3px 9px 1px #9eafc2;
+}
+
+@media (min-width:768px) {
+  .icon-links img:nth-of-type(3){
+    margin-right: 0;
+  }
+  .modal{
+    border-radius: 10px;
+    position: absolute;
+    padding: 25px 25px 14px 25px;
+    bottom:90px;
+    right:-100px;
+    left:600px;
+    display: flex;
+    box-shadow:0 3px 9px 1px #9eafc2;
+  }
+  .modalTriangle{
+  visibility: inherit;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+    border-top: 20px solid #48556a;
+    position: absolute;
+    bottom:53px;
+    left:700px;
+  }
+  .panel-img{
+    height:inherit;
+    width:600px;
+border-top-right-radius: 0;
+     border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+  }
+.whitePanel{
+  max-width:750px;
+  display: flex;
+  flex-direction: row;
+}
+}
