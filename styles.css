@@ -129,7 +129,7 @@ p{
   display: flex;
   flex-direction: column;
   position: relative;
-  box-shadow:0 3px 9px 1px #9eafc2;
+  box-shadow:0 3px 9px 1px #ecf2f8;
 }
 
 @media (min-width:768px) {
