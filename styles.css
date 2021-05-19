@@ -5,7 +5,8 @@ font-family: 'Manrope', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-      min-height: 100vh;
+      min-height: 90vh;
+      /* usually 100 but changing to 90 bc page has a little scroll otherwise*/
 }
 h1{
   color: gray;
